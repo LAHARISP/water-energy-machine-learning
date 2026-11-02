@@ -1,0 +1,72 @@
+| File                       | Responsibility                         |
+| -------------------------- | -------------------------------------- |
+| `generate_dataset.py`      | Generates our larger synthetic dataset |
+| `resource_consumption.csv` | Stores historical consumption          |
+| `data_loader.py`           | Loads and validates data               |
+| `feature_engineering.py`   | Creates ML input features              |
+| `model_training.py`        | Trains and compares ML algorithms      |
+| `anomaly_detector.py`      | Detects unusual consumption            |
+| `investigator.py`          | Suggests possible causes               |
+| `visualizer.py`            | Generates ML prediction graphs         |
+| `app.py`                   | Main application                       |
+| `models/`                  | Stores trained ML models               |
+| `reports/`                 | Stores reports and visualizations      |
+
+
+#Architecture of this project
+                RAW DATA
+                   |
+                   |
+          generate_dataset.py
+                   |
+                   |
+          resource_consumption.csv
+                   |
+                   |
+              data_loader.py
+                   |
+                   |
+          Data Cleaning and Validation
+                   |
+                   |
+          feature_engineering.py
+                   |
+                   |
+             Feature Creation
+                   |
+                   |
+             model_training.py
+                   |
+             ----------------
+             |              |
+       Linear Regression  Random Forest
+             |              |
+             ----------------
+                   |
+             Model Evaluation
+                   |
+             Best Model Selection
+                   |
+                   |
+          Consumption Prediction
+                   |
+                   |
+            anomaly_detector.py
+                   |
+                   |
+             Anomaly Detection
+                   |
+                   |
+             investigator.py
+                   |
+                   |
+             Possible Cause Analysis
+                   |
+                   |
+              visualizer.py
+                   |
+                   |
+                 app.py
+                   |
+                   |
+              USER INTERFACE

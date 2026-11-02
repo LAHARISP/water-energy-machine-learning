@@ -1,0 +1,43 @@
+{
+    "water": {
+        "resource": "water",
+        "model_name": "Random Forest",
+        "features": [
+            "occupancy",
+            "temperature",
+            "day_of_week",
+            "month",
+            "is_weekend",
+            "lag_1",
+            "rolling_mean_7"
+        ],
+        "error_threshold": 188.28286398667544,
+        "validation_mae": 16.9005249865283,
+        "test_metrics": {
+            "MAE": 76.75944050713429,
+            "RMSE": 244.40865219792005,
+            "R2": 0.18186969140216913
+        }
+    },
+    "electricity": {
+        "resource": "electricity",
+        "model_name": "Random Forest",
+        "features": [
+            "occupancy",
+            "temperature",
+            "operating_hours",
+            "day_of_week",
+            "month",
+            "is_weekend",
+            "lag_1",
+            "rolling_mean_7"
+        ],
+        "error_threshold": 39.47645938261096,
+        "validation_mae": 6.799541475412491,
+        "test_metrics": {
+            "MAE": 18.32257535356973,
+            "RMSE": 40.665820274498884,
+            "R2": -0.10341496742093281
+        }
+    }
+}
